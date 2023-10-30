@@ -1,0 +1,11 @@
+Logistic Regression : 
+pemodelan dengan metode regresi dimana variabel target hanya 0 dan 1.
+contoh : 1. Identifikasi Email (Spam / Tidak)
+	 2. Penyakit (Sakit / Tidak)
+
+rumus : 
+	Y = 1 / 1 + e^(b0+b1x)
+	nilai default Y adalah 0 sampai dengan 1
+Regresi logistik selalu menghasilkan value diantara 0.0 s/d 1.0
+hasil regresi logistik harus dijadikan kategorikan dengan pembeda di value 0.5. jika valuenya >= 0.5 dihitung positif(1) jika tidak maka negatif(0)
+

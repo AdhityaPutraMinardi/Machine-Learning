@@ -1,0 +1,3 @@
+isolation forest(Unsupervised Learning) : digunakan untuk anomaly detection.
+tujuan pencarian anomaly adalah untuk mencari keanehan pada data yang dipunya. sebagai contoh mencari keanehan pada transaksi
+kartu kredit untuk mendeteksi adanya pencurian 

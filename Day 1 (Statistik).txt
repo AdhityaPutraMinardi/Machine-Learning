@@ -1,0 +1,134 @@
+Statistik(Statistics) : berisi nilai data, graphin dan tabel yang memuat sebuah informasi
+statistika(Statistic) : ilmu yang menghasilkan statistik.
+	1. Data Collection > (Data Technic Sampling)
+	2. Data Summary > (Pembuatan tabel dan modus)
+	3. Data Visualization > (Pembuatan Grafik , chart, scatter plot)
+	4. Hipotesis > (Machine learning dan prediksi)
+
+
+Hipotesis : kesimpulan sementara yang didapat dari hasil observasi dan masih harus diuji menggunakan data yang ada(Stastikal Testing)
+data metric : merupakan data numeric semisal tinggi badan dan berat badan.
+data kategori : merupakan data text yang mengkategorikan sebuah keadaan atau sifat 
+nominal(Qualitatif / Categorical): 
+kardinal(Qualitatif / Categorical) : 
+interval (Quantitatif / Metric): 
+rasio (Quantitatif / Metric):
+
+
+
+Uji Statistik : 
+
+Tipe test : 
+		1. One Sample Test : testing yang menguji 1 nilai dengan 1 sample. Contoh : Cari rata rata jumlah iq di negara indonesia)
+		2. Two Sample Test(Karena sample testnya hanya 2 yaitu indonesia dan asean countries
+		3. Anova proses testing yang memiliki lebih dari 1 sample.
+		4. Two way Annova : merupakan testing yang memiliki lebih dari 2 sample dan lebih dari 1 feature/ independent variable. contoh : cari rata rata jumlah iq di negara indonesia dan negara asean berdasarkan kelompok usianya.
+		5. Manova : merupakan testing yang memiliki lebih dari 2 sample dan lebih dari 1 target / dependent variable.
+
+
+1. Uji perbedaan / Comparison Test
+	contoh : Comparing IQ level Indonesia & Asean Countries.
+		Target / Dependen Variable : IQ
+		Treatment / Feature / Independent Variable : Countries
+		
+		
+
+2. Uji keterkaitan / Correlation Test
+
+
+
+Correlation : Ada hubungan tanpa harus mempengaruhi
+Regresi : Harus jelas / masuk akal siapa yang menjadi feature / pembanding. contoh : pengaruh modal perusahaan terhadap laba.
+
+
+Target	(X)	 | Feature (Y) | Statistical Testing 						  |Contoh
+-----------------|-------------|------------------------------------------------------------------|----------------------------------------------
+Metric		 | Categorical | Comparison Testing : Annova / Manova, Two Sample , Two Way Anova |	 
+Metric		 | Metric      | Correlation Testing : Regression, Multi Line Regression 	  | Pengaruh kenaikan harga bbm terhadap inflasi
+Categorical	 | Metric      | Logistic Regression , Discriminan Analysis			  |
+Categorical 	 | Categorical | Coefficient Contigency , FI Stoke				  |			  
+
+
+
+Dependence Technique / Supervised Learning : ada target dan feature. jika tipe targetnya metric dan featurenya metric maka data tersebut akan diolah menjadi prediksi.jika targetnya categorical dan featurenya metric maka data tersebut akan diolah menjadi classification
+		1. Cluster Analysis. 
+			1.1 K-Means.
+			1.2 Hierarchycal
+		2. Factor Analysis / Principal Component / Dimension Reduction
+		
+Interdependence Technique / Unsupervised Learning : pada dasarnya tidak ada target dan feature tetapi tetap ada dalam model matematisnya
+
+
+Parsimony : prinsip kesederhanaan model. 
+	contoh :  
+		1. jika ada model yang memiliki 10 variabel mendapatkan akurasi 85%
+		2. Ada model yang memiliki 6 variabel dan mendapatkan akurasi 81%.
+	dari 2 case diatas yang dipilih adalah contoh ke 2 karena data ke 2 memiliki lebih sedikit interval / variabel yang digunakan untuk memprediksi dengan akurasi yang hanya berbeda sedikit
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Linear Regresion ( Supervised Learning)
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+rumus 
+	simple linear regresion : 
+		Y = B0 + B1x
+		Y^i = B0 + B1xi + ei
+	Multiple linear regression : 
+		Yi = B0i + B1X1i + B2X2i+ ... + BKXK ; K = 1, .... , J
+							I = 1 , .... , N
+		Y = BX
+
+	Y^ - Y = error
+
+linear regression digunakan untuk mencari model regresi yang tingkat errornya minimum
+
+
+
+dalam regresi ada beberapa asumsi yang harus dipenuhi : 
+	1. Asumsi Regresi OLS / Asumsi Klasik
+		Variabel target harus terdistribusi Normal(Normalitas)
+		1.1 Normalitas (Snapshot) , Stationer(Time Series)
+			1.1.1. Normalitas : 
+			1.1.2.
+		1.2 Transformasi : Log, Log(10), Ln, Inverse, Z.
+			1.2.1 : Rumus z = Nilai - Mean / Standar Deviation
+		1.3 Non Multikolinieritas
+			Multikolinieritas : berarti fitur yang digunakan untuk uji data regresi memiliki relasi / hubungan yang Cukup kuat. semisalnya gaji dan juga tabungan. hal ini harus dihindari karena akan membuat nilai signifikansi / relasi data pada regresi buruk
+			1.3.1 Heterocedasticity
+	2. 
+
+Jenis Data : 
+	1. Skala : Nominal,Ordinal(Qualitative Data) , Interval , Ratio(Quantitative / Metric Data)
+	2. Sumber : Primer, Sekunder.
+		2.1 : data primer adalah data yang diambil langsung kelapangan
+		2.2 : Data sekunder merupakan data yang diambil oleh orang lain. contohnya buku di perpustakaan
+		kedua data ini dibedakan karena ketika data yang digunakan data primer maka kita bertanggung jawab penuh akan kualitas data
+	3. Waktu Pengambilan : Snapshot , Time Series(Longitudinal/Serial) , Panel / Pooled
+		3.1 : Contoh dari snapshot adalah Survei
+		3.2 : Time Series merupakan data yang diambil berkali kali. contohnya data keuangan sebuah PT dari tahun ke tahun
+		3.3 : Panel / Pooled data merupakan gabungan dari snapshot dan time series. contoh : data keuangan pt ABC, PT Alkaline, PT BCA dari tahun 2015 - 2018
+
+
+
+
+
+
+Tugas : 
+cari di kaggle data price housing di california / di templat lain yang ada banyak variabelnya.
+pilih 2 variabel lalu running regresi menggunakan excel
+
+
+
+PR 1 : 
+Dengan data yang sama buat 1 sheet baru dengan 200 data. variabel independennya harus harga rumah, dan variabel dependennya bebas dan bisa berjumlah berapa saja.
+cari harga rumah berdasarkan variabel 1, variabel 2, variabel 3. 
+
+email : 
+hisyam@lawencon.com
+subject : 
+Nama_Tugas #1
+
+
+PR 2 : 
+Membuat data timeseries stock history dari data house pricing.
+ambil 2 variable emitten sebagai target, nilai saham 1 - 3 hari sebelum hari ini sebagai predictor
+masing masing ambil 1 emitten / perushaan(bebas)

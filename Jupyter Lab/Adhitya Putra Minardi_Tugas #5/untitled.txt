@@ -1,0 +1,2 @@
+
+Regresi logistik digunakan dibandingkan dengan metode analisis lainnya terutama ketika Anda memiliki variabel dependen yang bersifat biner (dua kategori: 0/1, ya/tidak, sukses/gagal, dll.). Ini karena regresi logistik dirancang khusus untuk menangani situasi di mana Anda ingin memahami hubungan antara variabel independen dan probabilitas terjadinya suatu kejadian biner. Berikut adalah beberapa alasan mengapa regresi logistik sering digunakan:

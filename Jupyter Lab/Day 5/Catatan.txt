@@ -1,0 +1,24 @@
+unsupervised learning : digunakan hanya untuk clustering dan tidak membutuhkan variabel target. unsupervised learning biasa digunakan untuk mencari pola dalam sebuah data dan mengelompokkanya. semisal untuk mencari email spam dalam dataset.
+
+unsupervised learning dapat digunakan untuk clustering, anomaly detection , dan dimension reduction.
+------------------------------------------------------------------------------------------------------------------------------
+
+
+Supervised Learning : supervised learning memerlukan variabel target karena hal ini dibutuhkan untuk membuat prediksi dan klasifikasi pada data.
+
+Supervised learning membutuhkan sebuah jawaban benar yang digunakan untuk menentukan apakah hasil klasifikasinya benar atau tidak. Supervised learning dibagi menjadi 2 yaitu :
+
+    - Classification : digunakan jika datanya mempunyai variabel target yang ingin di masukan ke sebuah klasifikasi benar / tidak. sebagai contoh klasifikasi gejala diabetes apakah orang tersebut terkena diabetes atau tidak berdasarkan gejala dan catatan kesehatannya.
+
+    - Regression : jika datanya merupakan angka / ingin memprediksi angka semisal harga rumah. Regression akan lebih baik untuk digunakan karena bisa memprediksi harga rumah kedepannya.
+
+------------------------------------------------------------------------------------------------------------------------------
+
+
+reinforcement learning : seperti unsupervised learning yang tidak membutuhkan variabel target, tetapi reinforcement learning bisa digunakan untuk klasifikasi dan prediksi.
+
+
+------------------------------------------------------------------------------------------------------------------------------
+Tugas : 
+cari data di kaggle(bebas), tentukan apakah data tersebut bagus menggunakan supervised / unsupervised. lalu print hasil f1,precision,recall,dan akurasi dari model yang dibuat
+
